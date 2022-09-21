@@ -16,5 +16,17 @@
     "incremental": true
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules"],
+  "ts-node": {
+    "compilerOptions": {
+      "module": "CommonJS",
+      "esModuleInterop": true,
+      "rootDir": "./server",
+      "target": "es2017",
+      "outDir": "./dist", 
+      "forceConsistentCasingInFileNames": true,
+      "strict": true,  
+      "skipLibCheck": true 
+    }
+  }
 }
